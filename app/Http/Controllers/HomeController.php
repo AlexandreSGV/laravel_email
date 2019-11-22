@@ -34,7 +34,7 @@ class HomeController extends Controller
     {
 
     $meu_email = new SendEmail($name);
-       Mail::to('strapacao@gmail.com')->send($meu_email);
+       Mail::to('destinatario@email.com')->send($meu_email);
        
        return 'Email was sent';
     }
